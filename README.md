@@ -2,6 +2,8 @@
 
 My [Ghostty](https://ghostty.org) terminal configuration — optimized for a clean, productive workflow with split-based navigation.
 
+This repo is intentionally limited to terminal-emulator appearance and behavior. Assistant-native status lines, hooks, and output styles live in `ai-config`; launcher scripts and completion sounds live in `terminal-config`.
+
 ## What's included
 
 ```
@@ -53,6 +55,12 @@ cp -r ghostty-config/* ~/.config/ghostty/
 - Quake-style dropdown terminal from the top of the screen
 - Follows your mouse to whichever display you're on
 - Auto-hides when it loses focus
+
+### AI Workflow Boundary
+
+- Claude and Codex notifications are triggered outside Ghostty via `terminal-config/bin/ai-notify`
+- Claude status line and Codex footer are configured in `ai-config`
+- Ghostty stays responsible for shell integration, visuals, and keybindings only
 
 ## Keyboard Shortcuts
 

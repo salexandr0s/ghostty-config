@@ -2,6 +2,7 @@
 # Ghostty — SAND Workflow for Claude Code
 # ============================================
 # Reload: Cmd+Shift+, (macOS)
+# Assistant-native status lines and notifications are configured in ai-config and terminal-config.
 
 # --- Typography ---
 font-family = JetBrainsMonoNerdFont
