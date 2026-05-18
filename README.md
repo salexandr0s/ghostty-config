@@ -9,6 +9,7 @@ This repo is intentionally limited to terminal-emulator appearance and behavior.
 ```
 ghostty-config/
 ├── config              # Main Ghostty configuration
+├── install.sh          # Idempotent symlink installer
 ├── shaders/
 │   └── crt.glsl        # Optional CRT scanline + vignette shader
 └── README.md
@@ -17,12 +18,9 @@ ghostty-config/
 ## Installation
 
 ```bash
-# Clone the repo
-git clone https://github.com/<your-username>/ghostty-config.git
-
-# Symlink or copy into place
-mkdir -p ~/.config/ghostty
-cp -r ghostty-config/* ~/.config/ghostty/
+git clone https://github.com/salexandr0s/ghostty-config.git ~/GitHub/ghostty-config
+cd ~/GitHub/ghostty-config
+./install.sh
 
 # Reload Ghostty (Cmd+Shift+,) or restart it
 ```
